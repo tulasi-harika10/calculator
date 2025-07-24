@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(238, 206, 165);
+
+        }
+#calci{
+    background-color: rgb(4, 80, 80);
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+   gap:15px;
+  box-shadow: rgb(87, 9, 9);
+  
+  padding:20px;
+  margin:auto;
+  width:35%;
+  border-radius: 20px;
+  margin-top: 230px;
+    
+}
+#calci > div{
+    background-color: aliceblue;
+    color:black;
+    width:40%;
+    height:40px;
+
+    font-size: 10px;
+    font-size:large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+   
+}
+#calci >div:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+#zero{
+    grid-column: span 2;
+}
+#equal{
+    width: 20px;
+    grid-row: span 2;
+}
+#space{
+    grid-column: span 4;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div id="calci">
+        <div id="space"> </div>
+    <div>c</div>
+    <div>+</div>
+    <div>%</div>
+    <div>*</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>-</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>+</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div id="equal">=</div>
+    <div id="zero">0</div>
+    
+    <div>.</div>
+  
+    </div>
+</body>
+</html>
